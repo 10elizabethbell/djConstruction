@@ -20,6 +20,42 @@
         ],
         "createdAt": "2026-10-21T03:41:29.132Z",
         "reason": "Claude triage: detector counts only fixed px sizes (12/14/16/18/20 after consolidation); headings use clamp() at 30-48px (h2) and 42-80px (h1), so the real scale has clear steps"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-21T03:49:57.515Z",
+        "reason": "Claude triage: focus-ring corner radius, not a surface shape; DESIGN.md documenter left it out as a one-off"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(20,26,30,.35)",
+        "createdAt": "2026-10-21T03:49:57.581Z",
+        "reason": "Claude triage: hero-only H1 text-shadow over the photo; documenter recorded it as a one-off"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#1b6fd6",
+        "createdAt": "2026-10-21T03:49:57.646Z",
+        "reason": "Claude triage: Facebook's brand blue on the Facebook logo icon only"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#5e666d",
+        "createdAt": "2026-10-21T03:49:57.712Z",
+        "reason": "Claude triage: placeholder grey tuned to 4.65:1 on the field fill"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "24px",
+        "createdAt": "2026-10-21T03:49:57.778Z",
+        "reason": "Claude triage: desktop-only header wordmark size (20px on phones)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-21T03:49:57.844Z",
+        "reason": "Claude triage: desktop-only How-it-works step titles (21px on phones)"
       }
     ]
   }
