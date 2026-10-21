@@ -40,9 +40,19 @@
 ## Ideas not built (yours to pick)
 - **Signature motion (opt-in):** runner-up worlds from the trade: (1) tile being laid — grout lines drawing in across the hero as a grid that settles; (2) a drywall knife skimming a smooth finish across a band divider; (3) paint roller pass revealing the hero photo; (4) a level bubble that settles as you scroll. Best fit: **tile laying**, since bathrooms are the specialty.
 - Before/after sliders under Bathrooms once pairs exist.
-- Work photo cards + "Click to see our work on Facebook." row under them.
+- Work photo cards, then switch the Facebook row back to "See more of our work on Facebook" (it says "Follow us on Facebook to see our work" now, because no work photos are posted yet).
 - A short "Who we are" with the owners' names and a photo.
-<!-- impeccable conflicts and not-applied findings are appended below -->
+
+### Impeccable sweep (every mode except live, plus finish review): applied
+Overlay darkened so the shower-glass edge no longer runs through the H1; copy de-duplicated ("built to last" was said four times); filler service sub-lines replaced; footer phone made a link; "didn't open?" note only shows if the page never lost focus; bounce-in waits for Cal Sans (max 600ms) so letters don't swap font mid-bounce; type scale reduced to 12/14/16/18/20 + clamp() headings; header gap and 12px tagline; "Our specialty" tag is now real text (screen readers read it).
+
+### Impeccable findings kept against (Ellie's calm-style choices or house rules)
+- Eyebrow pills (banned by Impeccable's craft floor), H1 letter bounce-in, floating text circle, Cal Sans, diagonal band texture (detector `repeating-stripes-gradient`, suppressed for index.html in `.impeccable/config.json`). `flat-type-hierarchy` also suppressed: the detector ignores clamp() heading sizes.
+- Reviewer asked to drop the footer phone number (twice on one phone screen with the closing band). Finishing rules allow the close and footer to repeat it, so it stays.
+- Reviewer flagged the generated hero as a trust risk ("could read as D&J's work"). Kept per the pitch-site rule (generated images allowed as an example of the service, never captioned as their job), but **replace it with a real D&J bathroom as soon as one exists**.
+- Hero image is upscaled ~1.7–1.9x on retina phones/desktops (source is 1536x1024). A sharper hero needs a real photo or an upscaler; under the dark overlay it reads fine on phones.
+- The three trust claims are generic, but they're the flyer's own words; swap for owner-specific lines when we have them.
+
 
 ## Not verified
 - Real-device tap/SMS handoff on iOS and Android, and inside Facebook's in-app browser (tested in headless Chromium and WebKit only).

@@ -24,7 +24,7 @@
 <style>
 /* ---------- Tokens ---------- */
 :root{
-  /* warm paper, two slates from the D&J badge, one sand accent from the flyer */
+  /* cool paper, two slates from the D&J badge, one sand accent from the flyer */
   --paper:#f3f5f7;       /* page ground: cool, from the slate */
   --card:#ffffff;
   --field:#e2e6eb;       /* form fields on the white card */
@@ -70,7 +70,7 @@ section{padding:64px 0}
 .accent{color:var(--sand-ink)}
 .on-navy .accent,.on-deep .accent,.hero .accent{color:var(--sand)}
 .head{display:grid;gap:16px;justify-items:start;max-width:640px}
-.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:40ch}
+.lede{font-size:clamp(18px,4.6vw,20px);color:var(--soft);max-width:40ch}
 .on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
 
 /* Eyebrow: a few key headings only. A label, not a button. */
@@ -87,29 +87,29 @@ section{padding:64px 0}
 
 /* ---------- Header ---------- */
 .top{background:var(--paper);color:var(--ink);position:relative;z-index:2}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:8px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;gap:16px;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:8px}
 .brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;line-height:1}
 .brand img{width:44px;height:44px;border-radius:50%;flex:none}
 .brand .nm{display:flex;flex-direction:column}
 .brand b{font:400 20px/1 var(--display);letter-spacing:.01em;white-space:nowrap}
-.brand .nm>span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
-.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.brand .nm>span{font:600 12px/1 var(--text);letter-spacing:.06em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 18px/1 var(--display);text-decoration:none;white-space:nowrap}
 .tel svg{width:18px;height:18px;flex:none;color:var(--sand-ink)}
-@media (max-width:429px){.brand b{font-size:18px}.tel svg{display:none}}
+@media (max-width:429px){.brand b{font-size:18px}.brand .nm>span{letter-spacing:.04em}.tel svg{display:none}}
 @media (max-width:374px){.brand .nm>span{display:none}.brand b{font-size:18px}.tel{font-size:16px}.tel svg{display:none}}
 
 /* ---------- Hero: a finished bathroom under the badge's slate ---------- */
 .hero{padding:0;position:relative;background-color:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
 .hero-art{position:absolute;inset:0;z-index:-2}
 .hero-art img{width:100%;height:100%;object-fit:cover;object-position:68% 50%}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(38,46,51,.72) 0%,rgba(38,46,51,.78) 45%,rgba(38,46,51,.9) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(38,46,51,.8) 0%,rgba(38,46,51,.84) 50%,rgba(38,46,51,.92) 100%)}
 .hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:64px}
 .hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:11ch;text-shadow:0 2px 24px rgba(20,26,30,.35)}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
 .hero h1 .w{display:inline-block;white-space:nowrap}
 .hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
 @keyframes letter-in{to{opacity:1;transform:none}}
-.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:#eef0f1;max-width:30ch}
+.promise{font-size:clamp(18px,4.7vw,20px);line-height:1.5;color:#eef0f1;max-width:34ch}
 .actions{display:grid;gap:12px;width:100%;margin-top:4px}
 
 /* ---------- Bathrooms + trust ---------- */
@@ -117,7 +117,7 @@ section{padding:64px 0}
 .claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
 .claims li+li{border-top:1px solid var(--line)}
 .claims svg{width:40px;height:40px;flex:none;color:var(--sand-ink)}
-.fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,21px)/1.2 var(--display);max-width:460px;box-shadow:0 8px 24px rgba(35,42,47,.07)}
+.fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,21px)/1.2 var(--display);max-width:520px;box-shadow:0 8px 24px rgba(35,42,47,.07)}
 .fb:hover,.fb:focus-visible{outline:none;background:var(--card)}
 .fb .lbl{display:flex;align-items:center;gap:14px}
 .fb .lbl svg{width:30px;height:30px;flex:none;color:#1b6fd6}
@@ -131,10 +131,11 @@ section{padding:64px 0}
 .row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:14px 0;text-decoration:none;color:var(--on-dark)}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
 .row b{display:block;font:400 clamp(21px,5.6vw,26px)/1.15 var(--display)}
-.row small{display:block;margin-top:4px;font-size:15px;line-height:1.4;color:var(--on-dark-soft)}
+.row small{display:block;margin-top:4px;font-size:16px;line-height:1.4;color:var(--on-dark-soft)}
 .row .arrow{background:rgba(255,255,255,.1);color:var(--on-dark)}
 .row:focus-visible .arrow{background:var(--sand);color:var(--ink);outline:3px solid var(--sand);outline-offset:3px}
-.row.lead b::after{content:"Our specialty";display:inline-block;vertical-align:middle;margin-left:10px;font:600 12px/1 var(--text);letter-spacing:.06em;text-transform:uppercase;color:var(--sand)}
+.row b{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.row .tag{font:600 12px/1 var(--text);letter-spacing:.06em;text-transform:uppercase;color:var(--sand)}
 
 /* ---------- How it works ---------- */
 .steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
@@ -147,7 +148,7 @@ section{padding:64px 0}
 .ask .wrap{display:grid;gap:28px}
 form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:22px;max-width:600px;box-shadow:0 10px 30px rgba(35,42,47,.06)}
 .field{display:grid;gap:8px;min-width:0}
-.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
 .field legend{margin-bottom:10px}
 .field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
@@ -160,12 +161,12 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
 .chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
 .chips input:checked+label{background:var(--ink);color:#fff}
-.err{display:none;font-size:15px;color:var(--error)}
+.err{display:none;font-size:16px;color:var(--error)}
 .field.bad .err{display:block}
 .field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
 form .btn-primary{width:100%}
 form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-.after{font-size:15px;color:var(--soft)}
+.after{font-size:14px;color:var(--soft)}
 .sent{color:var(--ink);font-weight:600}
 .sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
 @media (max-width:380px){.chips label{padding:0 14px}}
@@ -203,7 +204,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .tel{font-size:20px}
   section{padding:96px 0}
   .hero-art img{object-position:center 55%}
-  .hero::after{background:linear-gradient(90deg,rgba(38,46,51,.9) 0%,rgba(38,46,51,.78) 42%,rgba(38,46,51,.35) 75%,rgba(38,46,51,.2) 100%)}
+  .hero::after{background:linear-gradient(90deg,rgba(38,46,51,.92) 0%,rgba(38,46,51,.9) 46%,rgba(38,46,51,.45) 70%,rgba(38,46,51,.2) 100%)}
   .hero-copy{padding-top:120px;padding-bottom:136px}
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:220px}
@@ -211,7 +212,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 @media (min-width:1024px){
   .split{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
   .split .claims{grid-column:2;grid-row:1/3;margin-top:0}
-  .split .fb{grid-column:1;grid-row:2}
+  .split .fb{grid-column:2;grid-row:3;margin-top:24px}
   .svc .rows{grid-template-columns:1fr 1fr;column-gap:56px}
   .svc .rows li:nth-child(2){border-top:0}
   .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
@@ -246,10 +247,10 @@ footer a:hover{color:var(--sand)}
 <body>
 <!--
 THESIS: A Leamington renovation crew that does bathrooms best, shown calm and orderly (after lpmr.co.uk): one claim (bathrooms built to last, in Leamington), their own three promises, every room they take on, and an easy way to text or call.
-OWN-WORLD: The D&J badge's charcoal slate (#2e373c) and a mid slate (#3a4751) for dark bands, warm off-white paper, the flyer's sand (#d6b48e) as the one accent (fills only; #7a5432 when it has to be text on light). Cal Sans display, system body at 16/1.7.
+OWN-WORLD: The D&J badge's charcoal slate (#2e373c) and a mid slate (#3a4751) for dark bands, cool off-white paper (#f3f5f7), the flyer's sand (#d6b48e) as the one accent (fills only; #7a5432 when it has to be text on light). Cal Sans display, system body at 16/1.7.
 STORY: The visitor sees who renovates bathrooms in Leamington, believes they'll treat the house with care, finds their room in the list, and texts or calls.
 FIRST VIEWPORT: Paper header with the round badge and name left, tap-to-call number top right. Hero: a finished bathroom under a slate overlay; eyebrow, "Bathrooms built to last in Leamington.", the flyer's "Your vision. Our expertise." promise, two pill buttons (Get a quote, Text us).
-FORM: calm-photo band system with a generated example bathroom in the hero (no D&J job photos published yet); the quote form hands off by text message.
+FORM: the calm band house default (pitch-site, 2026-10-19) replaces Impeccable's concept roll, so there is no seed; calm-photo band system with a generated example bathroom in the hero (no D&J job photos published yet); the quote form hands off by text message.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md, and every shipping raster carrying its provenance.
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -275,7 +276,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap hero-copy">
     <span class="eyebrow">Bathroom renovation specialists</span>
     <h1 id="h1">Bathrooms built to last in <span class="accent">Leamington.</span></h1>
-    <p class="promise">Your vision, our expertise. We do all interior renovations, and we build every room like it's in our own home.</p>
+    <p class="promise">Your vision, our expertise. We do all interior renovations, start to finish.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#ask">Get a quote</a>
       <a class="btn btn-ghost" data-sms href="sms:+15198188755?&amp;body=Hi%20D%26J%2C%20I%20found%20your%20website.%20I'm%20thinking%20about%20a%20renovation%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text us</a>
@@ -287,7 +288,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap split">
     <div class="rise">
       <h2 id="h-trust">Your home, treated like <span class="accent">ours.</span></h2>
-      <p class="lede" style="margin-top:16px">A renovation means letting us into the rooms you live in every day. We keep you in the loop, finish what we start, and build it to last.</p>
+      <p class="lede" style="margin-top:16px">A renovation means letting us into the rooms you live in every day. We treat them with the same care we'd want in our own house.</p>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="15"/><path d="M13 20.5l4.5 4.5L27 15.5"/></svg>Quality craftsmanship</li>
@@ -295,7 +296,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L20 6l15 13"/><path d="M9 16v18h22V16"/><path d="M17 34v-9h6v9"/></svg>Residential renovations</li>
     </ul>
     <a class="fb rise" href="https://www.facebook.com/profile.php?id=100086518921872" rel="noopener">
-      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see our work on Facebook.</span>
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Follow us on Facebook to see our work</span>
       <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
     </a>
   </div>
@@ -308,14 +309,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <h2 id="h-svc">Every room in the <span class="accent">house.</span></h2>
     </div>
     <ul class="rows">
-      <li class="rise"><a class="row lead" href="#ask" data-job="Bathroom"><span><b>Bathrooms</b><small>Vanities, tile, flooring, fixtures</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row lead" href="#ask" data-job="Bathroom"><span><b>Bathrooms<span class="tag">Our specialty</span></b><small>Vanities, tile, flooring, fixtures</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
       <li class="rise"><a class="row" href="#ask" data-job="Kitchen"><span><b>Kitchens</b><small>Cabinets, countertops, flooring, backsplashes</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
       <li class="rise"><a class="row" href="#ask" data-job="Basement"><span><b>Basements</b><small>Finishing, walls, ceilings, flooring, lighting</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="row" href="#ask" data-job="Drywall &amp; painting"><span><b>Drywall &amp; painting</b><small>Smooth finishes, fresh looks</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-job="Drywall &amp; painting"><span><b>Drywall &amp; painting</b><small>Patching, taping, ceilings, paint</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
       <li class="rise"><a class="row" href="#ask" data-job="Flooring"><span><b>Flooring</b><small>Laminate, vinyl, tile, hardwood</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
       <li class="rise"><a class="row" href="#ask" data-job="Trim &amp; doors"><span><b>Trim &amp; doors</b><small>Baseboards, casing, doors, molding</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="row" href="#ask" data-job="Deck, fence or pergola"><span><b>Decks, fences &amp; pergolas</b><small>Outdoor spaces built to enjoy</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="row" href="#ask" data-job="Something else"><span><b>And more</b><small>Ask us about your project</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-job="Deck, fence or pergola"><span><b>Decks, fences &amp; pergolas</b><small>Custom outdoor spaces</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-job="Something else"><span><b>And more</b></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
     </ul>
   </div>
 </section>
@@ -326,7 +327,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ol class="steps">
       <li class="rise"><div><b>Tell us your vision.</b><span>Text, call, or send the form below.</span></div></li>
       <li class="rise"><div><b>We plan it with you.</b><span>Your ideas, our honest advice, and a quote before any work starts.</span></div></li>
-      <li class="rise"><div><b>We build it to last.</b><span>Then it's yours to enjoy.</span></div></li>
+      <li class="rise"><div><b>We build it to last.</b><span>We keep you in the loop and finish what we start.</span></div></li>
     </ol>
   </div>
 </section>
@@ -335,7 +336,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <div class="head rise">
       <span class="eyebrow">Big job or small</span>
-      <h2 id="h-ask">Tell us about your project</h2>
+      <h2 id="h-ask">Tell us about your <span class="accent">project.</span></h2>
       <p class="lede">Not sure it's something we do? Ask anyway.</p>
     </div>
     <form id="quoteForm" class="rise" novalidate>
@@ -377,7 +378,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <div class="rise">
       <h2 id="h-close">Let's build something great <span class="accent">together.</span></h2>
-      <p class="who">D&amp;J Construction · Quality renovations built to last.</p>
       <p class="area">Located in Leamington, Ontario. Not sure we cover your area? Call and ask.</p>
     </div>
     <a class="bigtel rise" href="tel:+15198188755"><svg aria-hidden="true"><use href="#i-phone"/></svg>519-818-8755</a>
@@ -388,7 +388,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <footer>
   <div class="wrap">
     <img class="badge" src="img/badge.webp" alt="D&amp;J Construction badge" width="72" height="72" loading="lazy">
-    <span>D&amp;J Construction · Leamington, Ontario · <span class="nw">519-818-8755</span></span>
+    <span>D&amp;J Construction · Leamington, Ontario · <a class="nw" href="tel:+15198188755">519-818-8755</a></span>
     <nav aria-label="Contact">
       <a href="mailto:Djconstruction@mail.com">Djconstruction@mail.com</a>
       <a href="https://www.facebook.com/profile.php?id=100086518921872" rel="noopener">Facebook</a>
@@ -426,9 +426,14 @@ document.documentElement.classList.add('js');
       }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
     });
   }
-  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
-  // once the last letter lands, put the plain heading back so kerning and text selection return
-  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+  function go(){
+    if(h.querySelector('.c'))return;
+    var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+    // once the last letter lands, put the plain heading back so kerning and text selection return
+    if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+  }
+  // wait for Cal Sans so letters don't swap font mid-bounce; give up after 600ms
+  if(document.fonts&&document.fonts.ready){Promise.race([document.fonts.ready,new Promise(function(r){setTimeout(r,600)})]).then(go)}else go();
 })();
 
 /* ===== Service rows pre-select the matching chip in the form ===== */
@@ -459,7 +464,7 @@ document.documentElement.classList.add('js');
     if(where)msg+=' Town: '+where+'.';
     CONFIG.open('sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg));
     // if no messages app opened (desktop, some in-app browsers), say what to do instead
-    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+    setTimeout(function(){if(!document.hidden)document.getElementById('sent').hidden=false},1200);
   });
 })();
 
