@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>D&amp;J Construction · Bathroom and interior renovations · Leamington, Ontario</title>
 <meta name="description" content="D&amp;J Construction renovates bathrooms, kitchens and basements in Leamington, Ontario. Quality renovations built to last. Call or text 519-818-8755.">
-<meta name="theme-color" content="#f5f3ef">
+<meta name="theme-color" content="#f3f5f7">
 <meta property="og:type" content="website">
 <meta property="og:title" content="D&amp;J Construction · Bathrooms built to last in Leamington">
 <meta property="og:description" content="Bathroom specialists who do all interior renovations. Call or text 519-818-8755.">
 <meta property="og:url" content="https://10elizabethbell.github.io/djConstruction/">
-<meta property="og:image" content="https://10elizabethbell.github.io/djConstruction/og.png">
+<meta property="og:image" content="https://10elizabethbell.github.io/djConstruction/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -25,9 +25,9 @@
 /* ---------- Tokens ---------- */
 :root{
   /* warm paper, two slates from the D&J badge, one sand accent from the flyer */
-  --paper:#f5f3ef;       /* page ground */
+  --paper:#f3f5f7;       /* page ground: cool, from the slate */
   --card:#ffffff;
-  --field:#e9e5de;       /* form fields on the white card */
+  --field:#e2e6eb;       /* form fields on the white card */
   --ink:#232a2f;         /* headings, text on sand */
   --body:#323b41;        /* running text on light */
   --soft:#566069;        /* secondary text on light */
@@ -95,13 +95,14 @@ section{padding:64px 0}
 .brand .nm>span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
 .tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
 .tel svg{width:18px;height:18px;flex:none;color:var(--sand-ink)}
+@media (max-width:429px){.brand b{font-size:18px}.tel svg{display:none}}
 @media (max-width:374px){.brand .nm>span{display:none}.brand b{font-size:18px}.tel{font-size:16px}.tel svg{display:none}}
 
 /* ---------- Hero: a finished bathroom under the badge's slate ---------- */
 .hero{padding:0;position:relative;background-color:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
 .hero-art{position:absolute;inset:0;z-index:-2}
 .hero-art img{width:100%;height:100%;object-fit:cover;object-position:68% 50%}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(38,46,51,.62) 0%,rgba(38,46,51,.72) 45%,rgba(38,46,51,.9) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(38,46,51,.72) 0%,rgba(38,46,51,.78) 45%,rgba(38,46,51,.9) 100%)}
 .hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:64px}
 .hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:11ch;text-shadow:0 2px 24px rgba(20,26,30,.35)}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
@@ -401,7 +402,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 /* ===== Config ===== */
 var CONFIG = {
   PHONE: '+15198188755',
-  FLOAT: true  // the floating text circle; false removes it
+  FLOAT: true,  // the floating text circle; false removes it
+  open: function(u){location.href=u}  // hands the composed text to the messages app
 };
 document.documentElement.classList.add('js');
 
@@ -455,7 +457,7 @@ document.documentElement.classList.add('js');
     if(j)msg+=' Project: '+j.value+'.';
     msg+=' '+what.replace(/[.\s]+$/,'')+'.';
     if(where)msg+=' Town: '+where+'.';
-    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    CONFIG.open('sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg));
     // if no messages app opened (desktop, some in-app browsers), say what to do instead
     setTimeout(function(){document.getElementById('sent').hidden=false},900);
   });
