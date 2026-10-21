@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T03:48:23+00:00",
+  "title": "Design System: D&J Construction",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "oklch(96.9% 0.003 248)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#3e4041",
+          "#5c5e5f",
+          "#7c7d7f",
+          "#9d9fa0",
+          "#c2c4c6",
+          "#edeff1"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Grey",
+        "canonical": "oklch(92.3% 0.008 254)",
+        "tonalRamp": [
+          "#090b0f",
+          "#212428",
+          "#3d4044",
+          "#5b5e62",
+          "#7a7e82",
+          "#9b9fa3",
+          "#c1c4c9",
+          "#ebeff4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "canonical": "oklch(28.0% 0.014 239)",
+        "tonalRamp": [
+          "#060c10",
+          "#1e252a",
+          "#394146",
+          "#575f65",
+          "#767f85",
+          "#97a0a6",
+          "#bdc6cc",
+          "#e7f0f7"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Slate",
+        "canonical": "oklch(34.6% 0.016 237)",
+        "tonalRamp": [
+          "#050c11",
+          "#1d252b",
+          "#384147",
+          "#555f66",
+          "#757f86",
+          "#96a0a7",
+          "#bbc6cd",
+          "#e5f0f8"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "canonical": "oklch(48.4% 0.019 245)",
+        "tonalRamp": [
+          "#050c13",
+          "#1c252d",
+          "#384149",
+          "#555f68",
+          "#747f88",
+          "#95a0aa",
+          "#bac6d0",
+          "#e4f0fb"
+        ]
+      },
+      "navy": {
+        "role": "secondary",
+        "displayName": "Mid Slate",
+        "canonical": "oklch(39.0% 0.024 241)",
+        "tonalRamp": [
+          "#030c14",
+          "#1a262f",
+          "#35424b",
+          "#52606a",
+          "#717f8a",
+          "#92a1ac",
+          "#b7c6d3",
+          "#e1f1fd"
+        ]
+      },
+      "deep": {
+        "role": "secondary",
+        "displayName": "Badge Slate",
+        "canonical": "oklch(33.0% 0.015 232)",
+        "tonalRamp": [
+          "#050c10",
+          "#1d252a",
+          "#384146",
+          "#565f65",
+          "#757f85",
+          "#96a0a6",
+          "#bbc6cc",
+          "#e5f1f7"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Warm Off-White",
+        "canonical": "oklch(96.8% 0.006 85)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#252421",
+          "#413f3c",
+          "#5f5d5a",
+          "#7f7d79",
+          "#a09e9a",
+          "#c6c4c0",
+          "#f0eeea"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "oklch(88.0% 0.008 242)",
+        "tonalRamp": [
+          "#080c0e",
+          "#212527",
+          "#3c4044",
+          "#5a5e62",
+          "#797e81",
+          "#9a9fa3",
+          "#c0c5c9",
+          "#eaeff3"
+        ]
+      },
+      "sand": {
+        "role": "primary",
+        "displayName": "Flyer Sand",
+        "canonical": "oklch(79.0% 0.064 70)",
+        "tonalRamp": [
+          "#140800",
+          "#351e01",
+          "#553915",
+          "#755734",
+          "#967753",
+          "#b99873",
+          "#e0bd97",
+          "#feebd6"
+        ]
+      },
+      "sand-2": {
+        "role": "primary",
+        "displayName": "Warm Sand Lift",
+        "canonical": "oklch(84.2% 0.054 72)",
+        "tonalRamp": [
+          "#130800",
+          "#341f01",
+          "#523b1d",
+          "#71593b",
+          "#927859",
+          "#b4997a",
+          "#dbbf9e",
+          "#feebd5"
+        ]
+      },
+      "sand-ink": {
+        "role": "primary",
+        "displayName": "Sand Ink",
+        "canonical": "oklch(47.9% 0.070 62)",
+        "tonalRamp": [
+          "#160700",
+          "#381c00",
+          "#5a3613",
+          "#7a5432",
+          "#9c7451",
+          "#bf9571",
+          "#e6ba96",
+          "#feeada"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Blue",
+        "canonical": "oklch(46.1% 0.085 247)",
+        "tonalRamp": [
+          "#000c1b",
+          "#002643",
+          "#11426a",
+          "#32618b",
+          "#5282ad",
+          "#73a4d1",
+          "#98caf9",
+          "#e2f1ff"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "oklch(50.1% 0.178 29)",
+        "tonalRamp": [
+          "#1f0000",
+          "#4b0001",
+          "#7b0807",
+          "#ac1d17",
+          "#d2463a",
+          "#f96a5b",
+          "#fcaca1",
+          "#fee9e5"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(35,42,47,.12)",
+        "tonalRamp": []
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only; letter bounce-in on load."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s, ending on an accent phrase."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Claim rows, service rows, step titles, the Facebook row; the button and header-number face at 18-20px."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One sentence under a section heading; the hero promise."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and inputs (16px so iOS does not zoom)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase brand subline and the row tag only."
+      },
+      "eyebrow": {
+        "displayName": "Eyebrow",
+        "purpose": "Eyebrow pills only (owner-approved exception)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 10px 30px rgba(35,42,47,.06)",
+        "purpose": "The quote form card on paper."
+      },
+      {
+        "name": "link-row-lift",
+        "value": "0 8px 24px rgba(35,42,47,.07)",
+        "purpose": "The white Facebook link row on paper."
+      },
+      {
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(20,26,30,.3)",
+        "purpose": "The floating text circle, which overlaps content."
+      },
+      {
+        "name": "band-texture",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Background image on deep-slate bands and the footer only; not a shadow, recorded here as the depth texture."
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), delay calc(var(--i) * 20ms), from opacity:0 translateX(50px)",
+        "purpose": "Hero H1 bounce-in only; JS-split, skipped under reduced motion."
+      },
+      {
+        "name": "rise",
+        "value": "opacity and transform .4s ease-out, from translateY(12px)",
+        "purpose": "Fade-up for elements that start below the first screen."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle entering and leaving."
+      },
+      {
+        "name": "state",
+        "value": ".15s-.2s colour and border transitions",
+        "purpose": "Hover and focus on buttons, fields, chips, arrows."
+      },
+      {
+        "name": "press",
+        "value": "transform .12s, scale(.98)",
+        "purpose": "Button press."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "374px",
+        "purpose": "max-width: hide brand subline, shrink number"
+      },
+      {
+        "name": "sm",
+        "value": "429px",
+        "purpose": "max-width: shrink wordmark, hide phone glyph"
+      },
+      {
+        "name": "md",
+        "value": "760px",
+        "purpose": "min-width: desktop header, 40px gutter, 96px sections, side-by-side hero buttons"
+      },
+      {
+        "name": "lg",
+        "value": "1024px",
+        "purpose": "min-width: two-column splits, two-up service rows, sticky form heading, three-up steps"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Sand pill for the one main action (Get a quote, form submit).",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Get a quote</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;background:var(--sand);color:var(--ink);border:2px solid var(--sand);transition:background-color .2s,border-color .2s,transform .12s}.ds-btn-primary:hover{background:var(--sand-2);border-color:var(--sand-2)}.ds-btn-primary:active{transform:scale(.98)}.ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined secondary pill, on slate or over the hero only.",
+      "html": "<div style=\"background:#2e373c;padding:24px\"><a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text us</a></div>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;background:transparent;color:var(--on-dark);border:2px solid rgba(246,244,240,.75);transition:background-color .2s,border-color .2s,transform .12s}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:active{transform:scale(.98)}.ds-btn-ghost:focus-visible{outline:3px solid var(--sand);outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Borderless tinted field on the white form card; focus-blue border on hover and focus.",
+      "html": "<label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\" placeholder=\"First name is fine\">",
+      "css": ".ds-label{display:block;margin-bottom:8px;font:400 18px/1.2 var(--display);color:var(--ink)}.ds-input{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--focus);transition:border-color .15s}.ds-input::placeholder{color:#5e666d}.ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)}"
+    },
+    {
+      "name": "Job Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio chip for the job type; ink fill when selected.",
+      "html": "<div class=\"ds-chips\"><input type=\"radio\" name=\"ds-j\" id=\"ds-j1\" checked><label for=\"ds-j1\">Bathroom</label><input type=\"radio\" name=\"ds-j\" id=\"ds-j2\"><label for=\"ds-j2\">Kitchen</label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover{border-color:var(--focus)}.ds-chips input:checked+label{background:var(--ink);color:#fff}.ds-chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}"
+    },
+    {
+      "name": "Quote Form Card",
+      "kind": "card",
+      "refersTo": "form-card",
+      "description": "The only card: white, 24px radius, ambient lift, on paper.",
+      "html": "<div style=\"background:#f3f5f7;padding:24px\"><div class=\"ds-card\"><b class=\"ds-card-t\">What do you have in mind?</b><div class=\"ds-card-f\"></div></div></div>",
+      "css": ".ds-card{background:var(--card);border-radius:24px;padding:clamp(20px,5vw,32px);display:grid;gap:22px;max-width:600px;box-shadow:0 10px 30px rgba(35,42,47,.06)}.ds-card-t{font:400 18px/1.2 var(--display);color:var(--ink)}.ds-card-f{height:120px;border-radius:10px;background:var(--field)}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Paper header: round badge and wordmark left, tap-to-call number right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-badge\"></span><span class=\"ds-nm\"><b>D&amp;J Construction</b><span>Renovations · Leamington</span></span></a><a class=\"ds-tel\" href=\"#\">519-818-8755</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:8px 20px;background:var(--paper);color:var(--ink)}.ds-brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:inherit;line-height:1}.ds-badge{width:44px;height:44px;border-radius:50%;background:var(--deep)}.ds-nm{display:flex;flex-direction:column}.ds-nm b{font:400 20px/1 var(--display)}.ds-nm span{font:600 12px/1 var(--text);letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin-top:5px}.ds-tel{display:inline-flex;align-items:center;min-height:44px;font:400 18px/1 var(--display);text-decoration:none;color:inherit}.ds-tel:hover{color:var(--sand-ink)}.ds-tel:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Whole-row link on mid slate; only the arrow circle fills with sand.",
+      "html": "<div style=\"background:#3a4751;padding:0 24px\"><a class=\"ds-row\" href=\"#\"><span><b>Bathrooms <i class=\"ds-tag\">Our specialty</i></b><small>Vanities, tile, flooring, fixtures</small></span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ".ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:14px 0;text-decoration:none;color:var(--on-dark)}.ds-row b{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font:400 clamp(21px,5.6vw,26px)/1.15 var(--display)}.ds-tag{font:normal 600 12px/1 var(--text);letter-spacing:.06em;text-transform:uppercase;color:var(--sand)}.ds-row small{display:block;margin-top:4px;font-size:16px;line-height:1.4;color:var(--on-dark-soft)}.ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow{background:var(--sand);color:var(--ink)}.ds-row:focus-visible{outline:none}.ds-row:focus-visible .ds-arrow{background:var(--sand);color:var(--ink);outline:3px solid var(--sand);outline-offset:3px}"
+    },
+    {
+      "name": "Eyebrow Pill",
+      "kind": "chip",
+      "refersTo": "eyebrow",
+      "description": "Owner-approved exception (Ellie, 2026-10-19): quiet label above the hero H1 and a few section headings. No hover, arrow, shadow or solid fill.",
+      "html": "<p class=\"ds-eyebrow\">Bathroom renovation specialists</p>",
+      "css": ".ds-eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(35,42,47,.06);padding:9px 14px;border-radius:999px}.ds-eyebrow::before{content:\"\";width:7px;height:7px;border-radius:50%;background:var(--sand)}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-circle",
+      "description": "One 60px sand circle, bottom right, opening a pre-filled text; shown after the hero, hidden while the form is on screen.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text D&amp;J Construction\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--ink);box-shadow:0 10px 28px rgba(20,26,30,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
+    },
+    {
+      "name": "Numbered Step",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Sand disc counter beside a Cal Sans title, on deep slate.",
+      "html": "<div style=\"background-color:#2e373c;background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);padding:24px\"><div class=\"ds-step\"><span class=\"ds-disc\">1</span><div><b>Tell us your vision.</b><span>Text, call, or send the form below.</span></div></div></div>",
+      "css": ".ds-step{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;color:var(--on-dark-soft);font:16px/1.7 var(--text)}.ds-disc{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--ink);font:400 20px/1 var(--display)}.ds-step b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}.ds-step span:not(.ds-disc){display:block;margin-top:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Slate Badge, Laid Out Flat",
+    "overview": "The system takes the D&J badge (white on charcoal slate) and the flyer's warm sand and spreads them across full-bleed bands that alternate light and dark, so every new section reads as a new room. It is an instance of Ellie's calm band house default (pitch-site, 2026-10-19): cool paper, two slates, one warm accent used as a fill, a single display webfont, soft borderless shapes, and motion limited to a hero headline bounce-in, a quiet fade-up, and a floating text circle.\n\nDensity is low and phone-first. One column on phones, two at 1024px and up; headlines are short and set large; lists are hairline-divided rows rather than card grids. Depth comes from band contrast and a faint diagonal line texture on the darkest slate, not from stacked shadows. The hero is a photograph of a finished bathroom under a slate overlay, so the photo reads as slate-toned and the copy sits on it at full contrast.\n\nThe page speaks as the crew, plainly. The visual system matches: no ornament beyond the texture and the sand accents, every control is a big rounded shape, and the accent appears where an action or a landing word is.",
+    "keyCharacteristics": [
+      "Full-bleed bands: paper, mid slate, deep slate with diagonal texture, alternating.",
+      "One accent, sand, as a fill; a darker sand-ink when it must be text on light.",
+      "Cal Sans for every heading, button label and list title; system sans for running text.",
+      "Pills and circles for every control; 24px card, 10px field, no borders at rest.",
+      "Each heading ends on an accent phrase.",
+      "Motion: H1 letter bounce-in, a 12px fade-up below the fold, a floating text circle."
+    ],
+    "rules": [
+      {
+        "name": "The Sand Is a Fill Rule",
+        "body": "Sand never sets text on a light ground (1.8:1 on paper). On light, use sand-ink; on sand, use ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Warm Colour Rule",
+        "body": "Sand is the only warm hue in the system. Everything else is a cool slate or neutral. A second accent breaks the badge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Display Does the Talking Rule",
+        "body": "Cal Sans sets every heading, every button label, every list title and every phone number. The system face never sets a heading; Cal Sans never sets a paragraph.",
+        "section": "typography"
+      },
+      {
+        "name": "The Accent Phrase Rule",
+        "body": "Every H1 and H2 ends on its last word or phrase in the accent: sand on slate and over the hero, sand-ink on paper. The build applies it on light bands too, which widens the house default (dark bands only).",
+        "section": "typography"
+      },
+      {
+        "name": "The Bands Alternate Rule",
+        "body": "Adjacent sections never share a ground. Order in the build: hero (deep), paper, mid slate, deep (textured), paper, mid slate, footer (deep, textured).",
+        "section": "layout"
+      },
+      {
+        "name": "The Texture Lives on Deep Slate Rule",
+        "body": "The diagonal lines belong to the badge's charcoal and nowhere else. Never raise its opacity above about 4%.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Ambient Only Rule",
+        "body": "Shadows are wide, soft and slate-tinted. No hard or offset shadows; no shadows on buttons, chips, rows or eyebrows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do alternate full-bleed bands so neighbouring sections never share a ground.",
+      "Do use sand only as a fill, with ink text on it; switch to sand-ink for sand-coloured text on light.",
+      "Do end each H1 and H2 on an accent phrase (sand on slate, sand-ink on paper).",
+      "Do set every heading, button label, list title and phone number in Cal Sans 400; keep running text in the system face at 16px / 1.7.",
+      "Do make every control a pill or circle, at least 44px tall (buttons 56px, chips 48px).",
+      "Do use focus blue for form hover and focus, and sand for focus rings on slate.",
+      "Do keep the fade-up content visible at rest and honour reduced motion everywhere.",
+      "Do make a list row the whole link and let only its arrow circle change."
+    ],
+    "donts": [
+      "Don't set sand text on paper or white (1.8:1).",
+      "Don't add a second accent colour or warm the neutrals.",
+      "Don't put the diagonal texture on the mid slate or on light bands, or push it above about 4% white.",
+      "Don't apply the letter bounce-in to any heading other than the hero H1.",
+      "Don't give an eyebrow pill a hover state, arrow, shadow or solid sand fill, or put one above every heading.",
+      "Don't use hard or offset shadows, or shadows on buttons, chips and rows.",
+      "Don't replace the floating circle with a bottom bar or show it alongside the form.",
+      "Don't rely on the field-grey fill alone to outline a field on white (1.25:1); the label and, on interaction, the focus-blue border carry it."
+    ]
+  }
+}

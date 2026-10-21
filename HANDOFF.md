@@ -53,6 +53,8 @@ Overlay darkened so the shower-glass edge no longer runs through the H1; copy de
 - Hero image is upscaled ~1.7–1.9x on retina phones/desktops (source is 1536x1024). A sharper hero needs a real photo or an upscaler; under the dark overlay it reads fine on phones.
 - The three trust claims are generic, but they're the flyer's own words; swap for owner-specific lines when we have them.
 
+- Form fields sit on a #e2e6eb fill on the white card with no resting border: 1.25:1, under WCAG's 3:1 for control edges (same as the DPG kit). Labels and placeholders make them findable; a faint resting border would fix it but breaks the borderless calm look, so it's your call.
+- No header shadow on scroll (calm kit item 1 mentions one); left out as the header doesn't stick.
 
 ## Not verified
 - Real-device tap/SMS handoff on iOS and Android, and inside Facebook's in-app browser (tested in headless Chromium and WebKit only).
